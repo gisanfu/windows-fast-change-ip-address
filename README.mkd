@@ -1,0 +1,7 @@
+# Windows Fast Change IP Address #
+
+author: gisanfu
+
+## 這是什麼東西
+
+在Windows中，利用本地端的網站，更改本地端的IP位置
