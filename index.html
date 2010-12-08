@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<title>更改本機IP</title>
+</head>
+
+<body>
+	
+update 2008-6-23 by gisanfu<br /><br />
+
+<b>把現行的IP，改成使用下列的IP位址及DNS伺服器位址</b><br /><br />
+
+<form action="changeip.php" method="post">
+	IP位址        <input name="ip" type="text" value="192.168.1." /><br />
+	子網路遮罩    <input name="mask" type="text" value="255.255.255.0" /><br />
+	預設閘道      <input name="gw" type="text" value="192.168.1." /><br />
+	慣用DNS伺服器 <input name="dns" type="text" value="168.95.1.1" /><br />
+	網路卡名稱    <input name="interface" type="text" value="eth0" /> *eth0是有線網路、wireless0是無線網路<br />
+	
+	<input name="hidop" type="hidden" value="staticip" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')" /><br />
+</form>
+
+<br />
+
+<b>把現行的IP改成自動取得IP位址</b><br /><br />
+	
+<form action="changeip.php" method="post">
+	網路卡名稱<input name="interface" type="text" value="eth0" /> *eth0是有線網路、wireless0是無線網路<br />
+  <input name="hidop" type="hidden" value="dhcp" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')"/><br />
+</form>
+
+<br />
+
+<b>其它ipconfig常用指令</b><br /><br />
+
+<form action="cmd.php" method="post">
+	ipconfig /release
+  <input name="hidop" type="hidden" value="ipconfig /release" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')"/><br />
+</form>
+
+<form action="cmd.php" method="post">
+	ipconfig /renew
+  <input name="hidop" type="hidden" value="ipconfig /renew" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')"/><br />
+</form>
+
+<form action="cmd.php" method="post">
+	ipconfig /flushdns
+  <input name="hidop" type="hidden" value="ipconfig /flushdns" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')"/><br />
+</form>
+
+<form action="cmd.php" method="post">
+	ipconfig /displaydns
+  <input name="hidop" type="hidden" value="ipconfig /displaydns" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')"/><br />
+</form>
+
+
+
+<form action="cmd.php" method="post">
+	ipconfig /all
+  <input name="hidop" type="hidden" value="ipconfig /all" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')"/><br />
+</form>
+
+<form action="cmd.php" method="post">
+	ipconfig
+  <input name="hidop" type="hidden" value="ipconfig" />
+  <input name="submit" type="submit" value="submit" onclick="return confirm('Are you sure?')"/><br />
+</form>
+<br />
+
+</body>
+</html>

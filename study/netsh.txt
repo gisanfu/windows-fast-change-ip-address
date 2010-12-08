@@ -1,0 +1,12 @@
+# update: 2008-06-23
+
+http://www.daybarr.com/blog/2007/05/11/how-to-change-ip-address-from-the-windows-command-line
+
+■ 手動設定IP
+netsh interface ip set address "Local Area Connection" static 192.168.1.23 255.255.255.0 192.168.1.254 1
+netsh interface ip set dns "Local Area Connection" static 168.95.1.1 primary
+
+■ DHCP
+
+netsh interface ip set address "Local Area Connection" dhcp
+netsh interface ip set dns "Local Area Connection" dhcp
