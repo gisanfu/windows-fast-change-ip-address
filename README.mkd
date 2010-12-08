@@ -5,3 +5,6 @@ author: gisanfu
 ## 這是什麼東西
 
 在Windows中，利用本地端的網站，更改本地端的IP位置
+
+
+![abc](http://pic.pimg.tw/gisanfu/fead9e1a2002703a56219b149eb9f39a.png)
