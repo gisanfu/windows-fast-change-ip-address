@@ -6,5 +6,8 @@ author: gisanfu
 
 在Windows中，利用本地端的網站，更改本地端的IP位置
 
-
 ![windows-fast-change-ip-address-demo](http://pic.pimg.tw/gisanfu/fead9e1a2002703a56219b149eb9f39a.png)
+
+## 或是使用以下的軟體
+
+<http://www.netsetman.com/>
